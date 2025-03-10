@@ -2,6 +2,16 @@
 
 \usepackage{subfiles}
 
+\usepackage[
+  colorlinks=true,
+  urlcolor=blue,
+  citecolor=black,
+  linkcolor=black
+]{hyperref}
+
+\usepackage[backend=biber]{biblatex}
+\addbibresource{references.bib}
+
 \begin{document}
 
 \title{Classifying Classic}
@@ -25,5 +35,7 @@
 \subfile{sections/results.tex}
 
 \subfile{sections/conclusion.tex}
+
+\printbibliography
 
 \end{document}
